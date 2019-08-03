@@ -114,7 +114,7 @@ class ImageComposition():
         self.allowed_output_types = ['.png', '.jpg', '.jpeg']
         self.allowed_background_types = ['.png', '.jpg', '.jpeg']
         self.zero_padding = 8 # 00000027.png, supports up to 100 million images
-        self.max_foregrounds = 3
+        self.max_foregrounds = 11
         self.mask_colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255)]
         assert len(self.mask_colors) >= self.max_foregrounds, 'length of mask_colors should be >= max_foregrounds'
 
